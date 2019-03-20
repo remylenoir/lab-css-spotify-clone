@@ -6,3 +6,89 @@ Green: #00B172
 White: #FFF
 
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #1A1A1A;
+}
+.text-white {
+  color: #ffffff;
+}
+.col {
+  float: left;
+}
+.col-2 {
+  width: 50%;
+}
+.col-3 {
+  width: 33%;
+}
+.clearfix {
+  clear: both;
+}
+
+.navigation {
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  padding: 20px 0;
+  background-color: #ffffff;
+}
+
+.logo {
+  width: 200px;
+  float: left;
+  margin-left: 20px;
+}
+
+.menu {
+  float: right;
+  margin-right: 20px;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 20px 0;
+}
+
+/* Header section */
+.hero-image {
+  margin-top: 100px;
+  background-image: url("../images/landing.jpg");
+  background-size: cover;
+  height: calc(100vh);
+}
+
+.hero-image__heading {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -55%);
+}
+
+.hero-image__heading-title {
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+.hero-image__heading-text {
+  font-size: 30px;
+}
+
+.whats-on {
+  text-align: center;
+  padding: 30px;
+}
+
+/* Yeezy section */
+.yeezy {
+  padding: 50px;
+  color: #ffffff;
+  background-color: #00B172;
+}
