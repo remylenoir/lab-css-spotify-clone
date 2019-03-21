@@ -127,6 +127,16 @@ html, body {
   font-weight: 300;
 }
 
+@media (max-width: 900px) {
+  .highlights__columns-wrapper {
+    flex-direction: column;
+  }
+  .highlights__column {
+    width: 75vw;
+    margin-bottom: 50px;
+  }
+}
+
 /* Yeezy part */
 
 .artist {
