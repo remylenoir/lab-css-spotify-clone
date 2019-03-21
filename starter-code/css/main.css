@@ -7,88 +7,168 @@ White: #FFF
 
 */
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600');
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #1A1A1A;
 }
+
+html, body {
+  color: #1A1A1A;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Utilities */
+
 .text-white {
   color: #ffffff;
 }
-.col {
-  float: left;
-}
-.col-2 {
-  width: 50%;
-}
-.col-3 {
-  width: 33%;
-}
-.clearfix {
-  clear: both;
-}
+
+/* Navigation */
 
 .navigation {
   width: 100vw;
-  height: 60px;
   position: fixed;
-  top: 0;
-  z-index: 999;
-  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   background-color: #ffffff;
 }
 
-.logo {
-  width: 200px;
-  float: left;
-  margin-left: 20px;
+.navigation__logo {
+  height: 50px;
 }
 
-.menu {
-  float: right;
-  margin-right: 20px;
-}
-
-.menu li {
-  display: inline-block;
+.navigation__menu-link {
   margin: 0 15px;
-  padding: 20px 0;
+  color: #000;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 26px;
 }
 
-/* Header section */
+/* Hero section */
+
 .hero-image {
-  margin-top: 100px;
+  height: 100vh;
   background-image: url("../images/landing.jpg");
   background-size: cover;
-  height: calc(100vh);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-image__heading {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  width: 100%;
-  text-align: center;
-  transform: translate(-50%, -55%);
-}
-
-.hero-image__heading-title {
-  font-size: 70px;
+.hero-image__wrapper-title {
+  font-size: 90px;
   margin-bottom: 30px;
-}
-
-.hero-image__heading-text {
-  font-size: 30px;
-}
-
-.whats-on {
   text-align: center;
-  padding: 30px;
 }
 
-/* Yeezy section */
-.yeezy {
-  padding: 50px;
+.hero-image__wrapper-text {
+  font-size: 30px;
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Features section */
+
+.features {
+  padding: 40px;
+}
+
+/* Highlights part */
+
+.highlights {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.highlights__title {
+  padding-bottom: 5px;
+  font-size: 43px;
+  font-weight: 600;
+  border-bottom: 4px solid #00B172;
+}
+
+.highlights__columns-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+  width: 80vw;
+}
+
+.highlights__column {
+  text-align: center;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlights__column-image {
+  height: 100px;
+}
+
+.highlights__column-title {
+  color: #00B172;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.highlights__column-text {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+/* Yeezy part */
+
+.artist {
+  padding: 80px 90px;
   color: #ffffff;
   background-color: #00B172;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-image: url("../images/spotify-icon-white.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 135px
+}
+
+.artist__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.artist__description-heading {
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  font-size: 40px;
+  font-weight: 600;
+  border-bottom: 4px solid #ffffff;
+}
+
+.artist__description-subheading {
+  margin: 15px 0;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.artist__description-text {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  padding-right: 50%;
+}
+
+.artist__description-img {
+  height: 45vw;
 }

@@ -7,65 +7,75 @@
   </head>
   <body>
     <nav class="navigation">
-      <img src="images/spotify-logo.png" class="logo" />
-      <ul class="menu">
-        <li>Premium</li>
-        <li>Discover</li>
-        <li>Help</li>
-        <li>Download</li>
-      </ul>
+      <img src="images/spotify-logo.png" class="navigation__logo" />
+      <div class="navigation__menu">
+        <a href="" class="navigation__menu-link">Premium</a>
+        <a href="" class="navigation__menu-link">Discover</a>
+        <a href="" class="navigation__menu-link">Help</a>
+        <a href="" class="navigation__menu-link">Download</a>
+      </div>
     </nav>
 
-    <div class="clearfix"></div>
-
-    <header class="hero-image">
-      <div class="hero-image__heading">
-        <h1 class="hero-image__heading-title text-white">Music for everyone.</h1>
-        <p class="hero-image__heading-text text-white">
-          Spotify is now free on mobile, tablet and computer.<br />
-          Listen to the right music, wherever you are.
+    <section class="hero-image">
+      <div class="hero-image__wrapper">
+        <h1 class="hero-image__wrapper-title text-white">Music for everyone.</h1>
+        <p class="hero-image__wrapper-text text-white">
+          Spotify is now free on mobile, tablet and computer. Listen to the right music, wherever you
+          are.
         </p>
       </div>
-    </header>
-
-    <section class="whats-on">
-      <h2>What’s on Spotify?</h2>
-
-      <div style="margin: 0 auto; width: 80%;">
-        <div class="col 3-col">
-          <img src="images/music-icon.png" />
-          <h3>Millions of Songs</h3>
-          <p>There are millions of songs on Spotify</p>
-        </div>
-        
-        <div class="col 3-col">
-          <img src="images/high-quality-icon.png" />
-          <h3>HD Music Listen to music</h3>
-          <p>as if you were listening live</p>
-        </div>
-        
-        <div class="col 3-col">
-          <img src="images/devices-icon.png" />
-          <h3>Stream Everywhere</h3>
-          <p>Stream music on your smartphone, tablet or computer</p>
-        </div>
-        
-        <div class="clearfix"></div>
-      </div>
-
     </section>
 
-    <section class="yeezy">
-    <h3>It’s as yeezy as Kanye West.</h3>
-    
-    <h4>Search</h4>
-    <p>Know what you want to listen to? Just search and hit play.</p>
-      
-    <h4>Browse</h4>
-    <p>Check out the latest charts, brand new releases and great playlists for right now.</p>
-    
-    <h4>Discover</h4>
-    <p>Enjoy new music every Monday with your own personal playlist. Or sit back and enjoy Radio.</p>
+    <section class="features">
+      <div class="highlights">
+        <div class="highlights__title-wrapper">
+          <h2 class="highlights__title">What’s on Spotify?</h2>
+        </div>
+
+        <div class="highlights__columns-wrapper">
+          <div class="highlights__column">
+            <img src="images/music-icon.png" class="highlights__column-image" />
+            <h3 class="highlights__column-title">Millions of Songs</h3>
+            <p class="highlights__column-text">There are millions of songs on Spotify</p>
+          </div>
+
+          <div class="highlights__column">
+            <img src="images/high-quality-icon.png" class="highlights__column-image" />
+            <h3 class="highlights__column-title">HD Music</h3>
+            <p class="highlights__column-text">Listen to music as if you were listening live</p>
+          </div>
+
+          <div class="highlights__column">
+            <img src="images/devices-icon.png" class="highlights__column-image" />
+            <h3 class="highlights__column-title">Stream Everywhere</h3>
+            <p class="highlights__column-text">Stream music on your smartphone, tablet or computer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="artist">
+        <div class="artist__description">
+          <h2 class="artist__description-heading">It’s as yeezy as Kanye West.</h2>
+
+          <h3 class="artist__description-subheading">Search</h3>
+          <p class="artist__description-text">
+            Know what you want to listen to? Just search and hit play.
+          </p>
+
+          <h3 class="artist__description-subheading">Browse</h3>
+          <p class="artist__description-text">
+            Check out the latest charts, brand new releases and great playlists for right now.
+          </p>
+
+          <h3 class="artist__description-subheading">Discover</h3>
+          <p class="artist__description-text">
+            Enjoy new music every Monday with your own personal playlist. Or sit back and enjoy Radio.
+          </p>
+        </div>
+        <div class="artist__description-image">
+          <img src="images/spotify-app.jpg" class="artist__description-img" />
+        </div>
+      </div>
     </section>
   </body>
 </html>
